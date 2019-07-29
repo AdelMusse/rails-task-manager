@@ -1,0 +1,6 @@
+<h1>MY TASKS</h1>
+    
+<%@tasks.each do |task|%>
+    <%= check_box_tag(:task) %>
+    <%= label_tag(:task, <%=task%>) %>
+<%end%>
